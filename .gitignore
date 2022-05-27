@@ -4,6 +4,11 @@
 Icon
 .DS_Store
 
+# Node files
+# ------------
+node_modules
+.env
+
 # Temporary files
 # ---------------
 
@@ -13,6 +18,10 @@ Icon
 # Content files
 # ------------
 /public/content/*
+
+# Distributed files
+# ------------
+/public/assets/*
 
 # Kirby files
 # ------------
