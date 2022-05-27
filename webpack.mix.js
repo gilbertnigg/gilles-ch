@@ -10,7 +10,9 @@ mix.options({
   )
   .postCss(
     process.env.MIX_SRC + '/styles/app.css',
-    process.env.MIX_DIST + '/css/'
+    process.env.MIX_DIST + '/css/', [
+      require('tailwindcss'),
+    ]
   )
   .copyDirectory(
     process.env.MIX_SRC + '/fonts/',
