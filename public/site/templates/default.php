@@ -1,18 +1,19 @@
-<!DOCTYPE html>
-<html lang="de" class="no-js">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?= $site->title() ?></title>
-	<script type="module">
-		document.documentElement.classList.remove('no-js');
-		document.documentElement.classList.add('js');
-	</script>
-	<?= css('assets/css/app.css') ?>
-	<?= js('assets/js/app.js', ['defer' => true]) ?>
-</head>
 
-<body>
+<?php snippet('head') ?>
+
+<body class="bg-gray-200 text-gb-dark text-base antialiased">
+
+<header class="bg-gb-dark text-white">
 	<h1><?= $page->title() ?></h1>
+	<h3><?= $page->headline() ?></h3>
+</header>
+
+<main>
+	[main]
+</main>
+
+<?php snippet('footer') ?>
+
 </body>
+
 </html>

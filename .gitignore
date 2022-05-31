@@ -23,6 +23,10 @@ node_modules
 # ------------
 /public/assets/*
 
+# No commercial fonts in public repo
+# ---------------
+/src/fonts/*
+
 # Kirby files
 # ------------
 /public/kirby/*

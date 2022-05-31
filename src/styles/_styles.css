@@ -1,1 +1,15 @@
-/**/
+/* purgecss start ignore */
+
+/*** Typography ***/
+h1, h2 {
+  @apply font-bold ;
+  @apply text-md;
+  @apply md:text-lg;
+}
+h4 {
+  @apply mb-4;
+  @apply text-md;
+  @apply font-bold;
+}
+
+/* purgecss end ignore */
