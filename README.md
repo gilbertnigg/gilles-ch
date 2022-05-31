@@ -1,20 +1,34 @@
 # gilles-ch
 
-Install frontend
+### Install frontend
 - [Laravel Mix](https://laravel-mix.com  )
 - [Tailwind CSS](https://tailwindcss.com )
 ```
 npm i
 ```
 
-Install backend
+### Install backend
 - [Kirby CMS](https://getkirby.com  )
 ```
 cd public
 composer install
 ```
+
 ---
-run `npm` scripts
+
+### Setup
+
+Copy/setup `.env` from `.env.example`
+
+No `public/content` stored in git. Add empty `home.txt` to run Kirby CMS:
+```
+mkdir -p public/content/home
+touch public/content/home/home.txt
+```
+
+---
+
+### Run `npm` scripts
 
 watch
 ```
