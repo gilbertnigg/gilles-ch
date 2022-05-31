@@ -3,14 +3,17 @@
 
 <body class="bg-gray-200 text-gb-dark text-base antialiased">
 
-<header class="bg-gb-dark text-white">
-	<h1><?= $page->title() ?></h1>
-	<h3><?= $page->headline() ?></h3>
-</header>
+<?php snippet('navicon') ?>
+<?php snippet('header') ?>
 
-<main>
-	[main]
-</main>
+<div class="container mx-auto xl:flex" >
+	<?php snippet('nav') ?>
+	<main class="w-full xl:ml-64">
+	<?php foreach ($site->children()->listed() as $article) : ?>
+		<?php snippet($article->intendedTemplate(), compact('article')) ?>
+	<?php endforeach ?>
+	</main>
+</div>
 
 <?php snippet('footer') ?>
 

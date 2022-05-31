@@ -3,13 +3,42 @@
 /*** Typography ***/
 h1, h2 {
   @apply font-bold ;
-  @apply text-md;
-  @apply md:text-lg;
+  @apply text-lg;
+  @apply md:text-xl;
 }
 h4 {
   @apply mb-4;
   @apply text-md;
   @apply font-bold;
+}
+
+/*** Header ***/
+header {
+  @apply flex flex-col justify-end;
+  @apply h-28;
+  @apply mb-8;
+  @apply pb-4;
+  @apply border-b border-gb-dark
+}
+#header header {
+  @apply mb-px;
+}
+#header svg {
+  @apply w-14 h-14;
+  @apply text-gb;
+  @apply md:w-16 md:h-16;
+}
+
+/*** Article ***/
+article {
+  @apply mb-12;
+  @apply px-4;
+}
+article a {
+  @apply text-gb;
+}
+article p {
+  @apply mb-4;
 }
 
 /* purgecss end ignore */
