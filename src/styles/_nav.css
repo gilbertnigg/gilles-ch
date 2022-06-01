@@ -1,0 +1,19 @@
+/* purgecss start ignore */
+
+/*** Navicon ***/
+#navicon {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*** Nav Menu ***/
+nav {
+  @apply hidden;
+  @apply xl:block;
+}
+nav li a:hover,
+nav li.is-selected a {
+  @apply text-gb;
+}
+
+/* purgecss end ignore */
+

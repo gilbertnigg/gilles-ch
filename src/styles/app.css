@@ -3,4 +3,5 @@
 @import "tailwindcss/utilities";
 @import "./_fonts.css";
 @import "./_styles.css";
+@import "./_nav.css";
 

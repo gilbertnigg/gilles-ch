@@ -40,5 +40,106 @@ article a {
 article p {
   @apply mb-4;
 }
+footer article a {
+  @apply border-b border-gb;
+  @apply text-white;
+}
+
+/*** Tags ***/
+.tags {
+  @apply flex;
+  @apply flex-wrap;
+}
+.tags li {
+  @apply mr-1;
+  @apply mb-1;
+  @apply bg-white;
+  @apply text-gb;
+  @apply leading-tight;
+  @apply text-xs;
+  @apply sm:text-sm;
+}
+.tags li span, .tags li a {
+  @apply px-1.5;
+  @apply py-0.5;
+  @apply block;
+}
+.tags li a {
+  @apply border-b border-gb-light;
+  @apply hover:text-gb-dark;
+  @apply hover:border-gb;
+}
+.tags li strong {
+  @apply font-medium;
+  @apply text-gb-dark;
+}
+.tags li a:hover strong {
+  @apply text-gb-dark;
+}
+.tags li i {
+  @apply not-italic;
+}
+.tags li svg {
+  @apply inline-block;
+  @apply w-4 h-4;
+  @apply mr-0.5;
+}
+
+/** Portfolio thumbnails & hover-states **/
+.portfolio__thumb:hover {
+  @apply shadow-xl
+}
+.portfolio__thumb figcaption {
+  @apply will-change-[color,background-color];
+  @apply transition-colors;
+  @apply duration-300;
+  @apply ease-in-out;
+  @apply bg-white;
+}
+.portfolio__thumb:hover figcaption {
+  @apply text-white;
+  @apply bg-gb-dark;
+}
+.portfolio__thumb figcaption >strong {
+  @apply text-gb-dark;
+}
+.portfolio__thumb figcaption >span {
+  @apply text-gb;
+}
+.portfolio__thumb:hover figcaption >strong {
+  @apply text-white;
+}
+.portfolio__thumb:hover figcaption >span {
+  @apply text-gb-light;
+}
+.portfolio__thumb >figure >span >img {
+  @apply will-change-transform;
+  @apply transition-transform;
+  @apply duration-300;
+  @apply ease-in-out;
+  @apply transform;
+}
+.portfolio__thumb:hover >figure >span >img {
+  @apply -translate-y-16;
+}
+
+/*** Logos ***/
+.logos {
+  @apply flex flex-wrap justify-start items-stretch;
+  @apply -mx-0.5;
+  @apply sm:flex-nowrap;
+  @apply md:-mx-1;
+}
+.logos li {
+  @apply w-1/4;
+  @apply mb-1;
+  @apply px-0.5;
+  @apply sm:w-[12.5%];
+  @apply md:px-1;
+  @apply md:mb-2;
+}
+.logos svg {
+  @apply aspect-square;
+}
 
 /* purgecss end ignore */
