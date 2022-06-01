@@ -138,7 +138,7 @@ footer article a {
   @apply md:px-1;
   @apply md:mb-2;
 }
-.logos svg {
+.logos img {
   @apply aspect-square;
 }
 
