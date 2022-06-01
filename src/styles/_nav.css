@@ -4,15 +4,53 @@
 #navicon {
   -webkit-tap-highlight-color: transparent;
 }
+#navicon span >span >span:nth-child(odd) {
+  @apply transition-opacity;
+  @apply duration-700 ease-overlay;
+}
+.nav-open #navicon span >span >span:nth-child(odd) {
+  @apply opacity-0;
+}
 
 /*** Nav Menu ***/
 nav {
-  @apply hidden;
-  @apply xl:block;
+  @apply will-change-[height];
+  @apply transition-[height];
+  @apply duration-700 ease-overlay;
+  @apply overflow-y-hidden;
+  @apply h-0;
+  @apply xl:h-auto;
 }
-nav li a:hover,
-nav li.is-selected a {
-  @apply text-gb;
+.nav-open nav  {
+  @apply h-overlay;
+  @apply overflow-y-auto;
+  @apply xl:h-auto;
+  @apply xl:overflow-y-visible;
+}
+nav li a {
+  @apply transition-colors duration-300;
+}
+nav li a:hover {
+  @apply xl:text-gb;
+}
+nav li a.is-selected {
+  @apply text-gb-dark;
+  @apply xl:text-gb;
+}
+
+/*** Nav animation ***/
+.nav-open nav li {
+  @apply opacity-0;
+  @apply animate-navfadein;
+}
+.nav-open nav li:nth-child(1) { animation-delay: 0.2s; }
+.nav-open nav li:nth-child(2) { animation-delay: 0.3s; }
+.nav-open nav li:nth-child(3) { animation-delay: 0.4s; }
+.nav-open nav li:nth-child(4) { animation-delay: 0.5s; }
+
+/*** Prevent scrolling ***/
+.nav-open, .nav-open body {
+  @apply overflow-y-hidden;
 }
 
 /* purgecss end ignore */

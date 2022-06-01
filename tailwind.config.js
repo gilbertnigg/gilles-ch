@@ -18,6 +18,26 @@ module.exports = {
       xl: '1360px',
     },
     extend: {
+      transitionTimingFunction: {
+        overlay: 'cubic-bezier(.87,0,.13,1)',
+      },
+      animation: {
+        fadein: 'fadein 0.4s ease-in-out forwards',
+        navfadein: 'navfadein 0.4s ease-out forwards',
+      },
+      keyframes: {
+        fadein: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        navfadein: {
+          '0%': { opacity: 0, transform: 'translateY(2rem)' },
+          '100%': { opacity: 1, transform: 'translateY(0rem)' },
+        }
+      },
+      height: {
+        overlay: 'calc(100vh - 7rem)',
+      },
       colors: {
         gb: {
           dark: '#2D3F49',
@@ -41,7 +61,7 @@ module.exports = {
         xl: ['1.8rem', 1.2],
         '2xl': ['2.1rem', 1.25],
         '3xl': ['2.8rem', 1.25],
-      },
+      }
     },
   },
   plugins: [],

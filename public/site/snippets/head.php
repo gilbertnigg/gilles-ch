@@ -9,5 +9,5 @@
 		document.documentElement.classList.add('js');
 	</script>
 	<?= css('assets/css/app.css') ?>
-	<?= js('assets/js/app.js', ['defer' => true]) ?>
+	<?= js('assets/js/app.js', ['defer' => true, 'type' => 'module']) ?>
 </head>
