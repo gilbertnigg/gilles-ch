@@ -1,0 +1,11 @@
+title: Bilder
+
+fields:
+  text:
+    label: Name
+    type: text
+    width: 1/2
+  weblink:
+    label: Weblink
+    type: url
+    width: 1/2

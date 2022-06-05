@@ -86,41 +86,35 @@ footer article a {
 }
 
 /** Portfolio thumbnails & hover-states **/
-.portfolio__thumb:hover {
-  @apply shadow-xl
+.js .portfolio__thumb {
+  @apply cursor-pointer;
+  @apply hover:shadow-xl;
 }
-.portfolio__thumb figcaption {
+.js .portfolio__thumb figcaption {
   @apply will-change-[color,background-color];
   @apply transition-colors;
   @apply duration-300;
   @apply ease-in-out;
-  @apply bg-white;
 }
-.portfolio__thumb:hover figcaption {
+.js .portfolio__thumb:hover figcaption {
   @apply text-white;
   @apply bg-gb-dark;
 }
-.portfolio__thumb figcaption >strong {
-  @apply text-gb-dark;
-}
-.portfolio__thumb figcaption >span {
-  @apply text-gb;
-}
-.portfolio__thumb:hover figcaption >strong {
-  @apply text-white;
-}
-.portfolio__thumb:hover figcaption >span {
-  @apply text-gb-light;
-}
-.portfolio__thumb >figure >span >img {
+.js .portfolio__thumb >span >img {
   @apply will-change-transform;
   @apply transition-transform;
   @apply duration-300;
   @apply ease-in-out;
   @apply transform;
 }
-.portfolio__thumb:hover >figure >span >img {
+.js .portfolio__thumb:hover >span >img {
   @apply -translate-y-16;
+}
+.js .portfolio__thumb:hover figcaption >strong {
+  @apply text-white;
+}
+.js .portfolio__thumb:hover figcaption >span {
+  @apply text-gb-light;
 }
 
 /*** Logos ***/

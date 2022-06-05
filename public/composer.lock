@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8c333d90ff2063a26c3e5b0a4c68761e",
+    "content-hash": "1e374ac33c059eb0155740ae70ae9bc6",
     "packages": [
         {
             "name": "claviska/simpleimage",
@@ -555,6 +555,54 @@
                 "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
             "time": "2021-05-03T11:20:27+00:00"
+        },
+        {
+            "name": "sylvainjule/pagetable",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sylvainjule/kirby-pagetable.git",
+                "reference": "c31b1345306a5683172c5a87c31c933f802b5355"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sylvainjule/kirby-pagetable/zipball/c31b1345306a5683172c5a87c31c933f802b5355",
+                "reference": "c31b1345306a5683172c5a87c31c933f802b5355",
+                "shasum": ""
+            },
+            "require": {
+                "getkirby/composer-installer": "^1.1"
+            },
+            "type": "kirby-plugin",
+            "extra": {
+                "installer-name": "pagetable"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sylvain Julé",
+                    "email": "contact@sylvain-jule.fr"
+                }
+            ],
+            "description": "Display subpages in a flexible table",
+            "support": {
+                "issues": "https://github.com/sylvainjule/kirby-pagetable/issues",
+                "source": "https://github.com/sylvainjule/kirby-pagetable/tree/1.1.4"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/sylvainjl",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/sylvainjule",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-04T09:50:29+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",

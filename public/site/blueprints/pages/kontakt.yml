@@ -1,0 +1,46 @@
+title: Kontakt
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          headline:
+            type: text
+            required: true
+          adresse:
+            label: Adresse
+            type: writer
+            inline: true
+            marks: false
+            nodes: false
+            required: true
+          email:
+            label: E-Mail
+            type: email
+            width: 1/2
+            required: true
+          tel:
+            label: Telefon
+            type: tel
+            width: 1/2
+            required: true
+
+  - width: 1/3
+    sections:
+      fields:
+        fields:
+          map:
+            label: Lageplan
+            type: url
+            required: true
+            icon: map
+          linkedin:
+            label: LinkedIn
+            type: url
+            icon: linkedin
+          twitter:
+            label: Twitter
+            type: url
+            icon: twitter

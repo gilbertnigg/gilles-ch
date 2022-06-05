@@ -1,0 +1,10 @@
+title: Intro
+preset: page
+pages: false
+files: false
+
+fields:
+  headline:
+    type: text
+    width: 3/4
+    required: true

@@ -1,0 +1,40 @@
+title: Portfolio
+
+sections:
+  fields:
+    fields:
+      headline:
+        type: text
+        width: 3/4
+        required: true
+
+  work:
+    type: pagetable
+    status: all
+    limit: 20
+    limitOptions:
+      - 20
+      - 50
+      - 100
+    sortBy: 'date desc'
+    template: work
+    create: work
+    image:
+      back: black
+      cover: true
+    columns:
+      date:
+        label: Datum
+        type: date
+        text: '{{ page.date("Y-m-d") }}'
+        dateInputFormat: 'YYYY-MM-DD'
+        dateOutputFormat: 'DD.MM.YYYY'
+        width: 1/8
+      genre:
+        text: '{{ page.genre }}'
+        width: 1/8
+      kunde:
+        text: '{{ page.kunde }}'
+      title:
+        label: Projekt
+        text: '{{ page.title }}'

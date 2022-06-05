@@ -32,6 +32,10 @@ node_modules
 /public/kirby/*
 /public/vendor/*
 
+# Plugins
+# ------------
+/public/site/plugins/*
+
 # Lock files
 # ---------------
 

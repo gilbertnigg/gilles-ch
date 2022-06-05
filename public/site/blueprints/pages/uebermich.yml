@@ -1,0 +1,42 @@
+title: Über mich
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          headline:
+            type: text
+            required: true
+          text:
+            extends: sections/text
+          netzwerk:
+            type: structure
+            sortBy: text asc
+            columns:
+              text:
+                  width: 1/4
+              art:
+                  width: 1/4
+              weblink:
+                  width: 1/2
+            fields:
+              text:
+                type: text
+              art:
+                type: text
+              weblink:
+                type: url
+
+  - width: 1/3
+    sections:
+      bilder:
+        headline: Bild
+        type: files
+        template: image
+        sortable: false
+        info: "{{ file.text }}"
+        layout: cards
+        image:
+          back: white

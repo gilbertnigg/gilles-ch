@@ -1,0 +1,41 @@
+title: Service
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: fields
+        fields:
+          headline:
+            type: text
+            required: true
+          text:
+            label: Text
+            extends: sections/text
+          lieblingstools:
+            type: files
+            uploads: image-link
+            info: "{{ file.text }} [{{ file.weblink }}]"
+            image:
+              back: white
+          technologien:
+            type: files
+            uploads: image-link
+            info: "{{ file.text }} [{{ file.weblink }}]"
+            image:
+              back: white
+          service:
+            type: tags
+            required: true
+            image:
+              back: white
+
+  - width: 1/3
+    sections:
+        bilder:
+          headline: Bilder
+          type: files
+          template: image-link
+          sortBy: name asc
+          image:
+            back: white

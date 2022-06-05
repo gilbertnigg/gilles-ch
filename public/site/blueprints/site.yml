@@ -1,2 +1,57 @@
-preset: pages
-unlisted: true
+title: Site
+
+tabs:
+  content:
+    label: Website
+    icon: sitemap
+    columns:
+      - width: 2/3
+        sections:
+          work:
+            headline: Portfolio
+            type: pages
+            template: work
+            create: work
+            parent: site.find("portfolio")
+            status: published
+            info: "{{ page.kunde }} - {{ page.date.toDate('d.m.Y') }}"
+            sortBy: 'date desc'
+            image:
+              cover: true
+              back: black
+      - width: 1/3
+        sections:
+          pages:
+            headline: Artikel
+            create: false
+            image: false
+            status: all
+  seo:
+    label: SEO
+    icon: search
+    columns:
+      - width: 2/3
+        fields:
+          seo_title:
+            label: SEO Titel
+            type: text
+          seo_description:
+            label: SEO Beschreibung
+            type: textarea
+            buttons: false
+            help: 100 bis 150 Zeichen
+      - width: 1/3
+        sections:
+          icon:
+            headline: Website Icon
+            type: files
+            template: seo-icon
+            multiple: false
+            sortable: false
+            max: 1
+            layout: cards
+            help: Format PNG, 1500×1500 Pixel
+            image:
+              ratio: 1/1
+              cover: true
+              back: white
