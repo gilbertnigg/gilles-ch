@@ -5,7 +5,7 @@
 	</header>
 	<div>
 		<?php if ($img = $article->image()) : ?>
-		<aside class="block float-left w-1/3 mr-4 md:w-1/4 lg:float-right lg:ml-16">
+		<aside class="block float-left w-1/3 mr-4 md:w-1/4 lg:float-right lg:ml-16 lg:mr-0">
 			<p class="mt-1 mb-2 lg:pl-2">
 				<img src="<?= $img->thumb(['width'=>390])->url() ?>" alt="<?= $site->title() ?>" class="-scale-x-100 lg:scale-x-100">
 			</p>
