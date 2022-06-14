@@ -5,7 +5,7 @@
 		class="object-cover object-top"
 		alt="<?= $work->title() ?>"
 		width="<?= $img->thumb(['width'=>1072])->width() ?>"
-		height="<?= $img->thumb(['width'=>1072])->width() ?>">
+		height="<?= $img->thumb(['width'=>1072])->height() ?>">
 </p>
 <?php endif ?>
 
