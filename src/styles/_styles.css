@@ -136,4 +136,12 @@ footer article a {
   @apply aspect-square;
 }
 
+/*** Kontakt ***/
+article#kontakt {
+  @apply mb-0;
+}
+article#kontakt header {
+  @apply mb-0;
+}
+
 /* purgecss end ignore */
