@@ -1,8 +1,8 @@
 <?php if ($img = $work->images()->template('image')->first()) : ?>
-<p class="mb-4 sm:px-4">
+<p class="aspect-w-16 aspect-h-9 lg:aspect-none mb-4 sm:px-4">
 	<img src="<?= $img->thumb(['width'=>1072])->url() ?>"
 		srcset="<?= $img->srcset(['640w' => ['width' => 680], '768w' => ['width' => 808], '1100w' => ['width' => 1600]]) ?>"
-		class="object-cover object-top aspect-video lg:aspect-auto"
+		class="object-cover object-top"
 		alt="<?= $work->title() ?>"
 		width="<?= $img->thumb(['width'=>1072])->width() ?>"
 		height="<?= $img->thumb(['width'=>1072])->width() ?>">

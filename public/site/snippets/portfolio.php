@@ -11,8 +11,15 @@
 				data-title="<?= $work->title() ?>"
 				data-headline="<?= $work->genre() ?>"
 				data-work="<?= $work->uid() ?>">
-				<span class="block overflow-hidden aspect-video">
-					<img src="<?= $img->thumb(['width'=>384,'height'=>384,'crop'=>'top'])->url() ?>" alt="<?= $work->title() ?>">
+				<span class="block overflow-hidden aspect-w-16 aspect-h-9">
+					<picture>
+						<img src="<?= $img->thumb(['width'=>384])->url() ?>"
+							class="object-cover object-top"
+							alt="<?= $work->title() ?>"
+							width="<?= $img->thumb(['width'=>384])->width() ?>"
+							height="<?= $img->thumb(['width'=>384])->height() ?>"
+							>
+					</picture>
 				</span>
 				<figcaption class="px-3 py-2 text-left text-xs bg-white sm:text-sm">
 					<strong class="font-medium text-gb-dark"><?= $work->title() ?></strong><br>

@@ -100,14 +100,14 @@ footer article a {
   @apply text-white;
   @apply bg-gb-dark;
 }
-.js .portfolio__thumb >span >img {
+.js .portfolio__thumb img {
   @apply will-change-transform;
   @apply transition-transform;
   @apply duration-300;
   @apply ease-in-out;
   @apply transform;
 }
-.js .portfolio__thumb:hover >span >img {
+.js .portfolio__thumb:hover img {
   @apply -translate-y-16;
 }
 .js .portfolio__thumb:hover figcaption >strong {
@@ -132,8 +132,13 @@ footer article a {
   @apply md:px-1;
   @apply md:mb-2;
 }
-.logos img {
-  @apply aspect-square;
+.logos li a {
+  @apply block;
+  @apply aspect-w-1 aspect-h-1;
+  @apply bg-white;
+}
+.logos li a img {
+  @apply p-2;
 }
 
 /*** Kontakt ***/
