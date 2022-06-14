@@ -5,9 +5,12 @@
 	</header>
 	<div class="flex flex-wrap -mx-1 md:-mx-2">
 	<?php foreach ($article->children()->listed()->sortBy('date', 'desc') as $work) : ?>
-		<?php if (!$img = $work->images()->first()) continue; ?>
+		<?php if (!$img = $work->images()->template('image')->first()) continue; ?>
 		<div class="px-1 mb-2 w-1/2 md:w-1/3 md:px-2 md:mb-4 lg:w-1/4">
-			<figure class="portfolio__thumb block h-full bg-white">
+			<figure class="portfolio__thumb block h-full bg-white"
+				data-title="<?= $work->title() ?>"
+				data-headline="<?= $work->genre() ?>"
+				data-work="<?= $work->uid() ?>">
 				<span class="block overflow-hidden aspect-video">
 					<img src="<?= $img->thumb(['width'=>384,'height'=>384,'crop'=>'top'])->url() ?>" alt="<?= $work->title() ?>">
 				</span>

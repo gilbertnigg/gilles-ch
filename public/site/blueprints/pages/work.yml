@@ -82,5 +82,13 @@ columns:
         template: image
         layout: cards
         image:
-           cover: true
-           ratio: 1/1
+          back: black
+      logo:
+        headline: Logo
+        type: files
+        template: logo
+        layout: cards
+        max: 1
+        size: tiny
+        image:
+          back: white

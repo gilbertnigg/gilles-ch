@@ -17,6 +17,8 @@
 
 <?php snippet('footer') ?>
 
+<?php snippet('overlay') ?>
+
 </body>
 
 </html>

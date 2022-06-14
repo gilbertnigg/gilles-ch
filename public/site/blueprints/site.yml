@@ -19,6 +19,7 @@ tabs:
             image:
               cover: true
               back: black
+              query: page.images.findBy("template", "image")
       - width: 1/3
         sections:
           pages:

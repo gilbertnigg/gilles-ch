@@ -22,6 +22,7 @@ sections:
     image:
       back: black
       cover: true
+      query: page.images.findBy("template", "image")
     columns:
       date:
         label: Datum
@@ -38,3 +39,6 @@ sections:
       title:
         label: Projekt
         text: '{{ page.title }}'
+      weblink:
+        label: Weblink
+        text: '{{ page.weblink }}'

@@ -1,0 +1,56 @@
+/* purgecss start ignore */
+
+/*** Overlay ***/
+#overlay-container {
+  @apply will-change-[height];
+  @apply transition-[height];
+  @apply duration-700 ease-overlay;
+  @apply overflow-y-hidden;
+  @apply overflow-x-hidden;
+  @apply pointer-events-none;
+  @apply h-0;
+}
+.overlay-open #overlay-container {
+  @apply pointer-events-auto;
+}
+.overlay-open #overlay-container,
+#overlay-content {
+  @apply h-overlay;
+}
+#overlay-close {
+  @apply hidden;
+}
+.overlay-open #overlay-close {
+  @apply block;
+}
+#btn-home {
+  @apply block;
+  @apply xl:hidden;
+}
+.overlay-open #btn-home {
+  @apply hidden;
+}
+.overlay-open #overlay-loader {
+  @apply block;
+}
+#overlay-loader,
+.overlay-loaded #overlay-loader {
+  @apply hidden;
+}
+
+/*** Typography ***/
+#overlay-content a {
+  @apply text-gb-light;
+}
+
+/*** Nav ***/
+.overlay-open nav,
+.overlay-open nav li a.is-selected  { /* Disable select */
+  @apply text-gray-200;
+  @apply xl:text-gb-light;
+}
+.overlay-open nav li a.is-selected  { /* Disable select */
+  @apply xl:text-gb-light;
+}
+
+/* purgecss end ignore */

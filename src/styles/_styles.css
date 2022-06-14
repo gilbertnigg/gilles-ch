@@ -144,4 +144,33 @@ article#kontakt header {
   @apply mb-0;
 }
 
+/* Style scrollbar */
+@screen lg {
+  html, body { /* FF */
+    scrollbar-width: thin;
+    scrollbar-color: #2D3F49 #EEEEEE;
+  }
+  :root.nav-open, :root.overlay-open {
+    scrollbar-color: #000000 #2D3F49;
+  }
+}
+::-webkit-scrollbar {
+  @apply w-2;
+}
+::-webkit-scrollbar-track {
+  @apply bg-gray-200;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gb-dark;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gb;
+}
+.nav-open ::-webkit-scrollbar-track, .overlay-open ::-webkit-scrollbar-track {
+  @apply bg-gb-dark;
+}
+.nav-open ::-webkit-scrollbar-thumb, .overlay-open ::-webkit-scrollbar-thumb {
+  @apply bg-black;
+}
+
 /* purgecss end ignore */
