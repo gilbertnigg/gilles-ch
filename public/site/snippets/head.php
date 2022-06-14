@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preload" href="<?= asset('assets/fonts/RingsideNarrow-Medium_Web.woff2') ?>" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?= asset('assets/fonts/RingsideNarrow-Thin_Web.woff2') ?>" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?= asset('assets/fonts/RingsideNarrow-Book_Web.woff2') ?>" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="<?= asset('assets/fonts/RingsideNarrow-Bold_Web.woff2') ?>" as="font" type="font/woff2" crossorigin>
 	<title><?= $site->seo_title() ?></title>
 	<meta name="description" content="<?= $site->seo_description() ?>">
 	<script type="module">

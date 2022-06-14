@@ -25,7 +25,11 @@
 	<?php foreach ($article->lieblingstools()->sortBy('sort', 'asc', 'filename', 'asc')->toFiles() as $lieblingstool): ?>
 		<li>
 			<a href="<?= $lieblingstool->weblink() ?>" target="_blank" rel="noopener noreferrer">
-				<img src="<?= $lieblingstool->url() ?>" width="100" height="100" alt="<?= $lieblingstool->text() ?>">
+				<img src="<?= $lieblingstool->url() ?>"
+					alt="<?= $lieblingstool->text() ?>"
+					width="<?= $lieblingstool->width() ?>"
+					height="<?= $lieblingstool->height() ?>"
+					loading="lazy">
 			</a>
 		</li>
 	<?php endforeach ?>
@@ -35,7 +39,11 @@
 	<?php foreach ($article->technologien()->sortBy('sort', 'asc', 'filename', 'asc')->toFiles() as $technologie): ?>
 		<li>
 			<a href="<?= $technologie->weblink() ?>" target="_blank" rel="noopener noreferrer">
-				<img src="<?= $technologie->url() ?>" width="100" height="100" alt="<?= $technologie->text() ?>">
+				<img src="<?= $technologie->url() ?>"
+					alt="<?= $technologie->text() ?>"
+					width="<?= $technologie->width() ?>"
+					height="<?= $technologie->height() ?>"
+					loading="lazy">
 			</a>
 		</li>
 	<?php endforeach ?>

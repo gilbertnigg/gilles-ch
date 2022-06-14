@@ -7,7 +7,15 @@
 		<?php if ($img = $article->image()) : ?>
 		<aside class="block float-left w-1/3 mr-4 md:w-1/4 lg:float-right lg:ml-16 lg:mr-0">
 			<p class="mt-1 mb-2 lg:pl-2">
-				<img src="<?= $img->thumb(['width'=>390])->url() ?>" alt="<?= $site->title() ?>" class="-scale-x-100 lg:scale-x-100">
+				<picture>
+					<source srcset="<?= $img->thumb(['width'=>384, 'format'=>'webp'])->url() ?>" type="image/webp">
+					<img src="<?= $img->thumb(['width'=>390])->url() ?>"
+						class="-scale-x-100 lg:scale-x-100"
+						alt="<?= $site->title() ?>"
+						width="<?= $img->thumb(['width'=>390])->width() ?>"
+						height="<?= $img->thumb(['width'=>390])->height() ?>"
+						loading="lazy">
+				</picture>
 			</p>
 		</aside>
 		<?php endif ?>
