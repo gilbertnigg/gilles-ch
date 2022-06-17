@@ -28,8 +28,7 @@
 				<img src="<?= $lieblingstool->url() ?>"
 					alt="<?= $lieblingstool->text() ?>"
 					width="<?= $lieblingstool->width() ?>"
-					height="<?= $lieblingstool->height() ?>"
-					loading="lazy">
+					height="<?= $lieblingstool->height() ?>">
 			</a>
 		</li>
 	<?php endforeach ?>
