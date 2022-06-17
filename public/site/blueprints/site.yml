@@ -14,7 +14,7 @@ tabs:
             create: work
             parent: site.find("portfolio")
             status: published
-            info: "{{ page.kunde }} - {{ page.date.toDate('d.m.Y') }}"
+            info: "{{ page.date.toDate('d.m.Y') }}"
             sortBy: 'date desc'
             image:
               cover: true

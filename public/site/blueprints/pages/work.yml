@@ -64,8 +64,9 @@ columns:
           date:
             label: Datum
             type: date
+            display: DD.MM.YYYY
           genre:
-            type: select
+            type: radio
             options:
               Animation
               Banner
@@ -76,6 +77,7 @@ columns:
               Touchscreen
               Website
               Web-App
+
       bilder:
         headline: Bilder
         type: files
@@ -92,3 +94,4 @@ columns:
         size: tiny
         image:
           back: white
+

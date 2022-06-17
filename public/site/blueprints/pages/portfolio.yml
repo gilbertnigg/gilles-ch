@@ -9,7 +9,9 @@ sections:
         required: true
 
   work:
-    type: pagetable
+    type: pages
+    layout: table
+    search: true
     status: all
     limit: 20
     limitOptions:
@@ -24,21 +26,21 @@ sections:
       cover: true
       query: page.images.findBy("template", "image")
     columns:
+      kunde:
+        label: Kunde
+      # title:
+      #   label: Projekt
+      #   text: '{{ page.title }}'
+      skills:
+        label: Skills
+        type: checkboxes
+      weblink:
+        type: url
+        label: Weblink
       date:
         label: Datum
         type: date
-        text: '{{ page.date("Y-m-d") }}'
-        dateInputFormat: 'YYYY-MM-DD'
-        dateOutputFormat: 'DD.MM.YYYY'
-        width: 1/8
-      genre:
-        text: '{{ page.genre }}'
-        width: 1/8
-      kunde:
-        text: '{{ page.kunde }}'
-      title:
-        label: Projekt
-        text: '{{ page.title }}'
-      weblink:
-        label: Weblink
-        text: '{{ page.weblink }}'
+        display: DD.MM.YYYY
+        width: 8rem
+
+
