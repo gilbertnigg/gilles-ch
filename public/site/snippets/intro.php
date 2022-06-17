@@ -3,11 +3,11 @@
 		<h2><?= $article->title() ?></h2>
 		<h3><?= $article->headline() ?></h3>
 	</header>
-	<h5 class="font-light text-gb-dark text-xl md:font-thin md:text-2xl lg:text-3xl">
+	<div class="font-light text-gb-dark text-xl md:font-thin md:text-2xl lg:text-3xl">
 		Willkommen bei Ihrem Partner für die Um&shy;setzung unter&shy;schied&shy;lichster Web&shy;lösungen.
 		Für Agenturen als auch für Direkt&shy;kunden – von der Kon&shy;zeption bis zur erfolg&shy;reichen
 		Online-Schaltung und Be&shy;treu&shy;ung. <span class="text-gb">Schön, sind Sie hier.</span>
-	</h5>
+	</div>
 	<ul class="tags mt-8">
 		<li>
 			<a href="mailto:<?= Str::encode(page('kontakt')->email()) ?>">

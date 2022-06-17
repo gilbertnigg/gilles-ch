@@ -5,7 +5,7 @@
 		<div class="xl:ml-64">
 			<article class="md:flex md:justify-start">
 				<div class="mb-4 md:w-1/4">
-					<h5>Gilbert Nigg</h5>
+					Gilbert Nigg<br>
 					<a href="<?= $kontakt->map() ?>" target="_blank" rel="noopener noreferrer"><?= $kontakt->adresse() ?></a>
 				</div>
 				<div class="mb-4 md:w-1/4">
