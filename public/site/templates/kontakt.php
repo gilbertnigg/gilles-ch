@@ -15,6 +15,7 @@ const map = new mapboxgl.Map({
 	zoom: 14 // starting zoom
 });
 map.addControl(new mapboxgl.NavigationControl());
+map.addControl(new mapboxgl.FullscreenControl());
 map.scrollZoom.disable();
 </script>
 </main>
