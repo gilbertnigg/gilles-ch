@@ -23,6 +23,11 @@ header {
 #header header {
   @apply mb-px;
 }
+#header header h2 {
+  @apply font-normal ;
+  @apply text-base;
+  @apply md:text-base;
+}
 #header svg {
   @apply w-14 h-14;
   @apply text-gb;
@@ -40,7 +45,7 @@ article a {
 article p {
   @apply mb-4;
 }
-footer article a {
+footer a {
   @apply border-b border-gb;
   @apply text-white;
 }
@@ -60,7 +65,7 @@ footer article a {
   @apply sm:text-sm;
 }
 .tags li span, .tags li a {
-  @apply px-1.5;
+  @apply px-2;
   @apply py-0.5;
   @apply block;
 }
@@ -74,7 +79,7 @@ footer article a {
   @apply text-gb-dark;
 }
 .tags li a:hover strong {
-  @apply text-gb-dark;
+  @apply text-black;
 }
 .tags li i {
   @apply not-italic;
@@ -147,6 +152,11 @@ article#kontakt {
 }
 article#kontakt header {
   @apply mb-0;
+}
+.do-nice-underline a {
+  @apply underline;
+  @apply decoration-gb-light;
+  @apply hover:text-black;
 }
 
 /* Style scrollbar */

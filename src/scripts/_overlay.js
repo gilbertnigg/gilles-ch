@@ -2,7 +2,7 @@ const overlayOpenHandlers = document.querySelectorAll('.portfolio__thumb');
 const overlayCloseHandler = document.getElementById('overlay-close');
 const overlayElement = document.querySelector('#overlay');
 const titleElement = document.querySelector('#header h1');
-const headlineElement = document.querySelector('#header h3');
+const headlineElement = document.querySelector('#header h2');
 
 // Open overlay
 function openOverlay(item) {

@@ -7,7 +7,7 @@
 		</div>
 		<header class="overflow-hidden relative flex-1">
 			<h1 class="truncate mr-2 xl:font-extrabold"><?= page('intro')->title() ?></h1>
-			<h3><?= page('intro')->headline() ?></h3>
+			<h2><?= page('intro')->headline() ?></h2>
 		</header>
 		<div class="flex flex-row items-end pb-5 md:pb-4">
 			<a href="#intro" id="btn-home" class="scrollto xl:hidden" data-anchor="intro" aria-label="Home">

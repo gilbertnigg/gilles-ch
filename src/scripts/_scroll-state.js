@@ -1,7 +1,7 @@
 const articles = document.querySelectorAll('main article[id]');
 const navElements = document.querySelectorAll('nav ul li a');
 const titleElement = document.querySelector('#header h1');
-const headlineElement = document.querySelector('#header h3');
+const headlineElement = document.querySelector('#header h2');
 let articleIsActive, articleCurrentisActive;
 
 document.addEventListener('scroll', () => {
