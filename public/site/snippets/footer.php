@@ -3,7 +3,7 @@
 <footer class="pt-8 pb-16 bg-gb-dark text-white">
 	<div class="container mx-auto">
 		<div class="xl:ml-64">
-			<article class="md:flex md:justify-start">
+			<div class="px-4 mb-12 md:flex md:justify-start md:mb-16">
 				<div class="mb-4 md:w-1/4">
 					Gilbert Nigg<br>
 					<a href="<?= $kontakt->map() ?>" target="_blank" rel="noopener noreferrer"><?= $kontakt->adresse() ?></a>
@@ -24,7 +24,7 @@
 					<a href="<?= $kontakt->twitter() ?>" target="_blank" rel="noopener noreferrer">Twitter</a><br>
 					<?php endif ?>
 				</div>
-			</article>
+			</div>
 		</div>
 	</div>
 </footer>

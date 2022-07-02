@@ -1,12 +1,14 @@
 <?php if ($img = $work->images()->template('image')->first()) : ?>
 <p class="aspect-w-16 aspect-h-9 lg:aspect-none mb-4 sm:px-4">
-	<img src="<?= $img->thumb(['width'=>1072])->url() ?>"
-		srcset="<?= $img->srcset(['640w' => ['width' => 680], '768w' => ['width' => 808], '1100w' => ['width' => 1600]]) ?>"
-		class="object-cover object-top"
-		alt="<?= $work->title() ?>"
-		width="<?= $img->thumb(['width'=>1072])->width() ?>"
-		height="<?= $img->thumb(['width'=>1072])->height() ?>"
-		loading="lazy">
+	<picture>
+		<source srcset="<?= $img->srcset(['640w' => ['width' => 680, 'format'=>'webp'], '768w' => ['width' => 808, 'format'=>'webp'], '1100w' => ['width' => 1600, 'format'=>'webp']]) ?>" type="image/webp">
+		<source srcset="<?= $img->srcset(['640w' => ['width' => 680], '768w' => ['width' => 808], '1100w' => ['width' => 1600]]) ?>">
+		<img src="<?= $img->thumb(['width'=>1072])->url() ?>"
+			class="object-cover object-top"
+			alt="<?= $work->title() ?>"
+			width="<?= $img->thumb(['width'=>1072])->width() ?>"
+			height="<?= $img->thumb(['width'=>1072])->height() ?>">
+	</picture>
 </p>
 <?php endif ?>
 

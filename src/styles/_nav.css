@@ -23,7 +23,6 @@ nav {
 }
 .nav-open nav  {
   @apply h-overlay;
-  @apply overflow-y-auto;
   @apply xl:h-auto;
   @apply xl:overflow-y-visible;
 }

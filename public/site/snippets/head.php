@@ -30,5 +30,4 @@
 		<meta property="twitter:image" content="<?= $seoIcon->crop(1500, 1500)->url() ?>">
 	<?php endif ?>
 	<?= css('assets/css/app.css') ?>
-	<?= js('assets/js/app.js', ['type' => 'module']) ?>
 </head>

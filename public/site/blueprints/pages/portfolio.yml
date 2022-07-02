@@ -14,23 +14,18 @@ sections:
     search: true
     status: all
     limit: 20
-    limitOptions:
-      - 20
-      - 50
-      - 100
     sortBy: 'date desc'
     template: work
     create: work
     image:
+      color: '#5A7E92'
       back: black
       cover: true
       query: page.images.findBy("template", "image")
     columns:
       kunde:
         label: Kunde
-      # title:
-      #   label: Projekt
-      #   text: '{{ page.title }}'
+        type: text
       skills:
         label: Skills
         type: checkboxes
