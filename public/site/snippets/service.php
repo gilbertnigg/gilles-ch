@@ -24,11 +24,12 @@
 	<ul class="logos mb-4">
 	<?php foreach ($article->lieblingstools()->sortBy('sort', 'asc', 'filename', 'asc')->toFiles() as $lieblingstool): ?>
 		<li>
-			<a href="<?= $lieblingstool->weblink() ?>" target="_blank" rel="noopener noreferrer">
+			<a href="<?= $lieblingstool->weblink() ?>" target="_blank" rel="noopener noreferrer" aria-label="<?= $lieblingstool->text() ?>">
 				<img src="<?= $lieblingstool->url() ?>"
 					alt="<?= $lieblingstool->text() ?>"
 					width="<?= $lieblingstool->width() ?>"
-					height="<?= $lieblingstool->height() ?>">
+					height="<?= $lieblingstool->height() ?>"
+					loading="lazy">
 			</a>
 		</li>
 	<?php endforeach ?>
@@ -37,7 +38,7 @@
 	<ul class="logos">
 	<?php foreach ($article->technologien()->sortBy('sort', 'asc', 'filename', 'asc')->toFiles() as $technologie): ?>
 		<li>
-			<a href="<?= $technologie->weblink() ?>" target="_blank" rel="noopener noreferrer">
+			<a href="<?= $technologie->weblink() ?>" target="_blank" rel="noopener noreferrer" aria-label="<?= $technologie->text() ?>">
 				<img src="<?= $technologie->url() ?>"
 					alt="<?= $technologie->text() ?>"
 					width="<?= $technologie->width() ?>"
