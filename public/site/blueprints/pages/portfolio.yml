@@ -18,7 +18,6 @@ sections:
     template: work
     create: work
     image:
-      color: '#5A7E92'
       back: black
       cover: true
       query: page.images.findBy("template", "image")

@@ -30,7 +30,7 @@ header {
 }
 #header svg {
   @apply w-14 h-14;
-  @apply text-gb;
+  @apply text-logo;
   @apply md:w-16 md:h-16;
 }
 
@@ -46,7 +46,7 @@ article p {
   @apply mb-4;
 }
 footer a {
-  @apply border-b border-gb;
+  @apply border-b border-logo;
   @apply text-white;
 }
 
@@ -179,7 +179,7 @@ article#kontakt header {
   @apply bg-gb-dark;
 }
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-gb;
+  @apply bg-logo;
 }
 .nav-open ::-webkit-scrollbar-track, .overlay-open ::-webkit-scrollbar-track {
   @apply bg-gb-dark;

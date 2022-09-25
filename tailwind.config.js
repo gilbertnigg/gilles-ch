@@ -41,9 +41,10 @@ module.exports = {
       colors: {
         gb: {
           dark: '#2D3F49',
-          DEFAULT: '#5A7E92',
+          DEFAULT: '#58788E',
           light: '#ACBEC8',
         },
+        logo: '#5A7E92',
         gray: {
           100: '#FEFEFE',
           200: '#EEEEEE'

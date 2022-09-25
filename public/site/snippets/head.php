@@ -20,6 +20,7 @@
 	<meta property="og:type" content="website">
 	<meta property="twitter:title" content="<?= $site->seo_title() ?>">
 	<meta property="twitter:description" content="<?= $site->seo_description() ?>">
+	<meta name="theme-color" content="#2D3F49">
 	<?php if ($seoIcon = $site->files()->template('seo-icon')->first()) : ?>
 		<link rel="icon" type="<?= $seoIcon->mime() ?>" href="<?= $seoIcon->crop(32, 32)->url() ?>" sizes="32x32">
 		<link rel="icon" type="<?= $seoIcon->mime() ?>" href="<?= $seoIcon->crop(48, 48)->url() ?>" sizes="48x48">
