@@ -25,9 +25,6 @@ sections:
       kunde:
         label: Kunde
         type: text
-      skills:
-        label: Skills
-        type: checkboxes
       weblink:
         type: url
         label: Weblink
