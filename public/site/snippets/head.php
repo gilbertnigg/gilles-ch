@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="canonical" href="https://www.gilles.ch">
 	<link rel="preload" href="<?= asset('assets/fonts/RingsideNarrow-Medium_Web.woff2') ?>" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="<?= asset('assets/fonts/RingsideNarrow-Thin_Web.woff2') ?>" as="font" type="font/woff2" crossorigin>
 	<link rel="preload" href="<?= asset('assets/fonts/RingsideNarrow-Light_Web.woff2') ?>" as="font" type="font/woff2" crossorigin>
