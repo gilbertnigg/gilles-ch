@@ -4,7 +4,7 @@
 		<source srcset="<?= $img->srcset(['640w' => ['width' => 680, 'format'=>'webp'], '768w' => ['width' => 808, 'format'=>'webp'], '1100w' => ['width' => 1600, 'format'=>'webp']]) ?>" type="image/webp">
 		<source srcset="<?= $img->srcset(['640w' => ['width' => 680], '768w' => ['width' => 808], '1100w' => ['width' => 1600]]) ?>">
 		<img src="<?= $img->thumb(['width'=>1072])->url() ?>"
-			class="object-cover object-top"
+			class="w-full h-full object-cover object-top"
 			alt="<?= $work->title() ?>"
 			width="<?= $img->thumb(['width'=>1072])->width() ?>"
 			height="<?= $img->thumb(['width'=>1072])->height() ?>"

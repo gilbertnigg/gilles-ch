@@ -15,7 +15,6 @@
 					<picture>
 						<source srcset="<?= $img->thumb(['width'=>384, 'format'=>'webp'])->url() ?>" type="image/webp">
 						<img src="<?= $img->thumb(['width'=>384])->url() ?>"
-							class="object-cover object-top"
 							alt="<?= $work->title() ?>"
 							width="<?= $img->thumb(['width'=>384])->width() ?>"
 							height="<?= $img->thumb(['width'=>384])->height() ?>"
