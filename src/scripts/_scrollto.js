@@ -2,7 +2,7 @@
 import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
 
-const scrollToHandlers = document.querySelectorAll('.scrollto');
+const scrollToHandlers = document.querySelectorAll('a[href^="#"]');
 let scrollBehavior;
 
 function scrollToElement(item) {

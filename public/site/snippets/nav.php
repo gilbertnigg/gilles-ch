@@ -2,7 +2,7 @@
 	<ul class="container mx-auto py-8 px-4 text-3xl font-light md:font-thin">
 	<?php foreach ($site->children()->notTemplate('intro')->listed() as $article) : ?>
 		<li>
-			<a href="#<?= $article->uid() ?>" id="nav-<?= $article->uid() ?>" class="scrollto" data-anchor="<?= $article->uid() ?>">
+			<a href="#<?= $article->uid() ?>" id="nav-<?= $article->uid() ?>" data-anchor="<?= $article->uid() ?>">
 				<?= $article->title() ?>
 			</a>
 		</li>

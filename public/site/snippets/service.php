@@ -6,7 +6,6 @@
 	<div class="lg:flex">
 		<div class="do-nice-underline lg:w-3/4 lg:pr-16">
 			<?= $article->text() ?>
-			<p>Für detaillierte Informationen oder spezifische Bedürfnisse, zögern Sie nicht, mich zu <a href="#kontakt" class="scrollto" data-anchor="kontakt">kontaktieren</a>.</p>
 		</div>
 		<aside class="mt-8 lg:mt-0 lg:pl-2 lg:w-1/4">
 			<h4 class="mt-8 md:mt-0">Leistungen</h4>
