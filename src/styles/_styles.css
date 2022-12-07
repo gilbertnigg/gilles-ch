@@ -45,10 +45,6 @@ article a {
 article p {
   @apply mb-4;
 }
-footer a {
-  @apply border-b border-logo;
-  @apply text-white;
-}
 
 /*** Tags ***/
 .tags {
@@ -152,11 +148,6 @@ article#kontakt {
 }
 article#kontakt header {
   @apply mb-0;
-}
-.do-nice-underline a {
-  @apply underline;
-  @apply decoration-gb-light;
-  @apply hover:text-black;
 }
 
 /* Style scrollbar */
