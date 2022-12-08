@@ -1,5 +1,9 @@
 let mix = require('laravel-mix');
 
+if (mix.inProduction()) {
+  mix.version()
+}
+
 mix.options({
     processCssUrls: false
   })

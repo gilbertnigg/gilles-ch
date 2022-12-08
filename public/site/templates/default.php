@@ -19,7 +19,7 @@
 
 <?php snippet('overlay') ?>
 
-<?= js('assets/js/app.js', ['type' => 'module']) ?>
+<?= mix('assets/js/app.js', ['type' => 'module']) ?>
 </body>
 
 </html>

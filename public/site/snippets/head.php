@@ -31,5 +31,5 @@
 		<meta property="og:image" content="<?= $seoIcon->crop(1500, 1500)->url() ?>">
 		<meta property="twitter:image" content="<?= $seoIcon->crop(1500, 1500)->url() ?>">
 	<?php endif ?>
-	<?= css('assets/css/app.css') ?>
+	<?= mix('css/app.css') ?>
 </head>
