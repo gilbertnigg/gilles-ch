@@ -44,7 +44,7 @@ module.exports = {
           DEFAULT: '#58788E',
           light: '#ACBEC8',
         },
-        logo: '#5A7E92',
+        logo: '#5b7f95',
         gray: {
           100: '#FEFEFE',
           200: '#EEEEEE'
