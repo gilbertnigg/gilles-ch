@@ -4,7 +4,7 @@
 		<h3><?= $article->headline() ?></h3>
 	</header>
 	<div class="lg:flex">
-		<div class="lg:w-3/4 lg:pr-16 [&_a]:underline [&_a]:text-primary [&_a]:decoration-gb-light [&_a:hover]:text-black">
+		<div class="lg:w-3/4 lg:pr-16 [&_a]:underline [&_a]:text-primary [&_a]:decoration-gb-light [&_a:hover]:text-black dark:[&_a]:text-gb-light dark:[&_a]:decoration-white">
 			<?= $article->text() ?>
 		</div>
 		<aside class="mt-8 lg:mt-0 lg:pl-2 lg:w-1/4">

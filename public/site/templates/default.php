@@ -1,7 +1,7 @@
 
 <?php snippet('head') ?>
 
-<body class="bg-gray-200 text-gb-dark text-base antialiased">
+<body class="bg-gray-200 text-gb-dark text-base antialiased dark:bg-logo dark:text-white">
 
 <?php snippet('navicon') ?>
 <?php snippet('header') ?>

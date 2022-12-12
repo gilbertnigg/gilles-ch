@@ -3,10 +3,10 @@
 		<h2><?= $article->title() ?></h2>
 		<h3><?= $article->headline() ?></h3>
 	</header>
-	<div class="font-light text-gb-dark text-xl md:font-thin md:text-2xl lg:text-3xl">
+	<div class="font-light text-xl md:font-thin md:text-2xl lg:text-3xl dark:text-white">
 		Willkommen bei Ihrem Partner für die Um&shy;setzung unter&shy;schied&shy;lichster Web&shy;lösungen.
 		Für Agenturen als auch für Direkt&shy;kunden – von der Kon&shy;zeption bis zur erfolg&shy;reichen
-		Online-Schaltung und Be&shy;treu&shy;ung. <span class="text-gb">Schön, sind Sie hier.</span>
+		Online-Schaltung und Be&shy;treu&shy;ung. <span class="text-gb dark:text-gb-light">Schön, sind Sie hier.</span>
 	</div>
 	<ul class="tags mt-8">
 		<li>

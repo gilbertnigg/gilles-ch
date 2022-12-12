@@ -1,4 +1,4 @@
-<article id="<?= $article->uid() ?>" class="bg-gb-dark text-white sm:bg-transparent sm:text-gb-dark">
+<article id="<?= $article->uid() ?>" class="bg-gb-dark sm:bg-transparent max-sm:text-gray-200">
 	<header>
 		<h2><?= $article->title() ?></h2>
 		<h3><?= $article->headline() ?></h3>

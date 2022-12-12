@@ -1,4 +1,4 @@
-<nav class="fixed z-40 left-0 top-28 w-full bg-logo text-white xl:left-auto xl:w-64 xl:bg-transparent xl:text-gb-dark">
+<nav class="fixed z-40 left-0 top-28 w-full bg-logo text-white xl:left-auto xl:w-64 xl:bg-transparent xl:text-gb-dark dark:xl:text-gb-light">
 	<ul class="container mx-auto py-8 px-4 text-3xl font-light md:font-thin">
 	<?php foreach ($site->children()->notTemplate('intro')->listed() as $article) : ?>
 		<li>

@@ -18,10 +18,13 @@ header {
   @apply h-28;
   @apply mb-8;
   @apply pb-4;
-  @apply border-b border-gb-dark
+  @apply border-b;
+  @apply border-gb-dark;
+  @apply dark:border-white;
 }
 #header header {
   @apply mb-px;
+  @apply dark:border-gb-dark;
 }
 #header header h2 {
   @apply font-normal ;
@@ -59,6 +62,8 @@ article p {
   @apply leading-tight;
   @apply text-xs;
   @apply sm:text-sm;
+  @apply dark:bg-gb-dark;
+  @apply dark:text-white;
 }
 .tags li span, .tags li a {
   @apply px-2;
@@ -66,13 +71,17 @@ article p {
   @apply block;
 }
 .tags li a {
+  @apply transition-colors;
   @apply border-b border-gb-light;
+  @apply hover:bg-white;
   @apply hover:text-gb-dark;
   @apply hover:border-gb;
+  @apply dark:text-white;
 }
 .tags li strong {
   @apply font-medium;
   @apply text-gb-dark;
+  @apply dark:text-gb-light;
 }
 .tags li a:hover strong {
   @apply text-black;
@@ -84,6 +93,9 @@ article p {
   @apply inline-block;
   @apply w-4 h-4;
   @apply mr-0.5;
+}
+#overlay-container .tags li {
+  @apply dark:bg-gb;
 }
 
 /** Portfolio thumbnails & hover-states **/
