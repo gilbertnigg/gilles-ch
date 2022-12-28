@@ -7,11 +7,11 @@
 	<?php foreach ($article->children()->listed()->sortBy('date', 'desc') as $work) : ?>
 		<?php if (!$img = $work->images()->template('image')->first()) continue; ?>
 		<div class="px-1 mb-2 w-1/2 md:w-1/3 md:px-2 md:mb-4 lg:w-1/4">
-			<figure class="portfolio__thumb block h-full"
+			<figure class="portfolio__thumb relative"
 				data-title="<?= $work->title() ?>"
 				data-headline="<?= $work->genre() ?>"
 				data-work="<?= $work->uid() ?>">
-				<span class="block overflow-hidden aspect-w-16 aspect-h-9">
+				<span class="block overflow-hidden aspect-w-16 aspect-h-12">
 					<picture>
 						<source srcset="<?= $img->thumb(['width'=>384, 'format'=>'webp'])->url() ?>" type="image/webp">
 						<img src="<?= $img->thumb(['width'=>384])->url() ?>"
@@ -21,7 +21,7 @@
 							loading="lazy">
 					</picture>
 				</span>
-				<figcaption class="px-3 py-2 text-left text-xs bg-white sm:text-sm">
+				<figcaption class="absolute bottom-0 inset-x-0 px-3 py-2 text-left text-xs bg-white sm:text-sm">
 					<strong class="font-medium text-gb-dark"><?= $work->title() ?></strong><br>
 					<span class="text-gb"><?= $work->genre() ?> <?= $work->date()->toDate('Y') ?></span>
 				</figcaption>
