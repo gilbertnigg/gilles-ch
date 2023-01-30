@@ -177,6 +177,7 @@ article#kontakt header {
 }
 ::-webkit-scrollbar-track {
   @apply bg-gray-200;
+  @apply dark:bg-gb;
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-gb-dark;
