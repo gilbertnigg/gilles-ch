@@ -25,7 +25,7 @@
 					<?php endif ?>
 				</div>
 				<div class="mb-4 md:w-1/4">
-					<a href="https://www.gilles.ch/data/Datenschutzerklaerung.pdf" target="_blank" rel="noopener noreferrer">Datenschutz</a><br>
+					<a href="https://www.gilles.ch/data/Datenschutzerklaerung.pdf" target="_blank">Datenschutz</a><br>
 				</div>
 			</div>
 		</div>
