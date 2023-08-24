@@ -43,6 +43,7 @@ node_modules
 # ---------------------------
 *.sublime-workspace
 /.vscode
+/.nova
 /.idea
 
 # -------------SECURITY-------------
