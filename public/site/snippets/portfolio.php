@@ -38,11 +38,11 @@
 			<ul class="tags">
 			<?php $a_kunden = [];
 			foreach ($article->children()->published()->sortBy('kunde', 'asc') as $work) :
-			if (in_array($work->kunde()->toString(), $a_kunden)) {
-				continue; // Prevent duplicates
-			} else {
-				$a_kunden[] = $work->kunde()->toString();
-			} ?>
+				if (in_array($work->kunde()->toString(), $a_kunden) || !$work->kunde()->toString()) {
+						continue; // Prevent duplicates
+				} else {
+					$a_kunden[] = $work->kunde()->toString();
+				} ?>
 				<li><span><?= $work->kunde()->toString() ?></span></li>
 			<?php endforeach ?>
 			</ul>
