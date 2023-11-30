@@ -14,7 +14,7 @@ sections:
     search: true
     status: all
     limit: 20
-    sortBy: 'date desc'
+    sortBy: date desc
     template: work
     create: work
     image:
@@ -28,6 +28,9 @@ sections:
       weblink:
         type: url
         label: Weblink
+      skills:
+        type: checkboxes
+        label: Skills
       date:
         label: Datum
         type: date
