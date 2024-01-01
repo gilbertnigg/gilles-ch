@@ -1,0 +1,10 @@
+title: Default Page
+icon: page
+
+
+columns:
+  - width: 2/3
+    sections:
+      content:
+        type: pages
+        limit: 999

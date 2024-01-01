@@ -1,0 +1,15 @@
+title: Type
+icon: page
+
+
+columns:
+  - width: 2/3
+    sections:
+      pages:
+        type: pages
+        label: Other posts
+        query: page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('tools', page.uuid, ',')
+        sortBy: 'date desc'
+        info: "{{ page.date.toDate('d.m.Y') }}"
+        template: work
+        limit: 9999
