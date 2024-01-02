@@ -1,40 +1,57 @@
-title: Portfolio
+title: Projekte
 
-sections:
-  fields:
-    fields:
-      headline:
-        type: text
-        width: 3/4
-        required: true
-
-  work:
-    type: pages
-    layout: table
-    search: true
-    status: all
-    limit: 20
-    sortBy: date desc
-    template: work
-    create: work
-    image:
-      back: black
-      cover: true
-      query: page.images.findBy("template", "image")
-    columns:
-      kunde:
-        label: Kunde
-        type: text
-      weblink:
-        type: url
-        label: Weblink
-      skills:
-        type: checkboxes
-        label: Skills
-      date:
-        label: Datum
-        type: date
-        display: DD.MM.YYYY
-        width: 8rem
+options:
+  delete: false
 
 
+columns:
+  - width: 1/1
+    sections:
+      content:
+        type: fields
+        fields:
+          headline:
+            label: Headline
+            type: text
+
+      work:
+        type: pages
+        headline: Seiten
+        status: all
+        sortBy: date desc
+        info: "{{ page.date.toDate('d.m.Y') }}"
+        search: true
+        layout: table
+        columns:
+          kunde:
+            label: Kunde
+            type: text
+          weblink:
+            type: url
+            label: Weblink
+          date:
+            width: 1/8
+            value: "{{ page.date.toDate('d.m.Y') }}"
+        template: work
+        image:
+          query: page.images.sortBy('sort','asc', 'filename','asc').first
+          back: black
+
+  - width: 1/2
+    sections:
+      type:
+        headline: Typ
+        type: pages
+        parent: page.children.find("types")
+        template: type
+        image:
+          back: black
+  - width: 1/2
+    sections:
+      tool:
+        headline: Tools
+        type: pages
+        parent: page.children.find("tools")
+        template: tool
+        image:
+          back: black

@@ -1,15 +1,14 @@
-title: Type
-icon: page
+title: Typ
+icon: tag
 
-
-columns:
-  - width: 2/3
-    sections:
-      pages:
-        type: pages
-        label: Other posts
-        query: page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('tools', page.uuid, ',')
-        sortBy: 'date desc'
-        info: "{{ page.date.toDate('d.m.Y') }}"
-        template: work
-        limit: 9999
+sections:
+  pages:
+    type: pages
+    label: Work
+    query: page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('type', page.uuid, ',')
+    sortBy: 'date desc'
+    info: "{{ page.date.toDate('d.m.Y') }}"
+    template: work
+    limit: 9999
+    image:
+      back: black

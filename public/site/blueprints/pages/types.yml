@@ -1,10 +1,10 @@
-title: Tools
+title: Typen
 icon: tag
 
 sections:
   content:
     type: pages
-    label: Tools
-    limit: 999
+    label: Typ
+    limit: 9999
     image:
       back: black

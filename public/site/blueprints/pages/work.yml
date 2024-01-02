@@ -1,22 +1,36 @@
 title: Projekt
 num: date
 
+navigation:
+  status: all
+  sortBy: date desc
+
 columns:
   - width: 2/3
     sections:
       content:
         type: fields
         fields:
-          weblink:
-            type: url
+          kunde:
+            type: text
+            width: 1/2
           mediapartner:
             extends: sections/text
             inline: true
-          kunde:
-            type: text
+            width: 1/2
           text:
             label: Text
             extends: sections/text
+          weblink:
+            type: url
+          tools:
+            type: checkboxes
+            columns: 4
+            options:
+              type: query
+              query: page("page://Avw8zX98OrbJWLpD").children
+              text: "{{ page.title }}"
+              value: "{{ page.uuid }}"
           skills:
             type: checkboxes
             columns: 4
@@ -66,6 +80,13 @@ columns:
             label: Datum
             type: date
             display: DD.MM.YYYY
+          type:
+            type: select
+            options:
+              type: query
+              query: page("page://mXUxQxgYcrWpOtXg").children
+              text: "{{ page.title }}"
+              value: "{{ page.uuid }}"
           genre:
             type: radio
             options:
