@@ -19,8 +19,11 @@ columns:
             inline: true
             width: 1/3
           zeige_kunde:
+            label: Kunde anzeigen
             type: toggle
-            text: Kunde anzeigen
+            text:
+              - Ja
+              - Nein
             width: 1/3
           text:
             label: Text
