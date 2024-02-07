@@ -30,24 +30,24 @@
 		</ul>
 	</div>
 
-    <div class="mt-8 md:mt-0 md:pl-2 md:w-1/2 lg:w-1/3">
-        <?php if ($work->weblink()->isNotEmpty()) : ?>
-        <h4>Website: </h4>
-        <p class="mb-8">
-            <a href="<?= $work->weblink() ?>" class="bg-white border-b-2 border-gb px-3 py-1.5 rounded-md font-medium uppercase" target="_blank" rel="noopener noreferrer">
-	            <span class="text-gb-dark"><?= str_replace(['https://', 'http://', 'www.'], '', $work->weblink()) ?></span>
-            </a>
-        </p>
-        <?php endif ?>
+	<div class="mt-8 md:mt-0 md:pl-2 md:w-1/2 lg:w-1/3">
+		<?php if ($work->weblink()->isNotEmpty()) : ?>
+		<h4>Website: </h4>
+		<p class="mb-8">
+			<a href="<?= $work->weblink() ?>" class="bg-white border-b-2 border-gb px-3 py-1.5 rounded-md font-medium uppercase" target="_blank" rel="noopener noreferrer">
+				<span class="text-gb-dark"><?= str_replace(['https://', 'http://', 'www.'], '', $work->weblink()) ?></span>
+			</a>
+		</p>
+		<?php endif ?>
 
-        <?php if ($work->skills()->isNotEmpty()) : ?>
-        <h4>Leistungen:</h4>
-        <ul class="tags">
-            <?php foreach ($work->skills()->split() as $skill) : ?>
-            <li><span><?= $skill ?></span></li>
-            <?php endforeach ?>
-        </ul>
-        <?php endif ?>
-    </div>
+		<?php if ($work->tools()->isNotEmpty()) : ?>
+		<h4>Leistungen:</h4>
+		<ul class="tags">
+			<?php foreach ($work->tools()->split() as $skill) : ?>
+			<li><span><?= page($skill)->title() ?></span></li>
+			<?php endforeach ?>
+		</ul>
+		<?php endif ?>
+	</div>
 
 </article>

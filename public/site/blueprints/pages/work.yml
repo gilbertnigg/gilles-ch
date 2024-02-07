@@ -35,46 +35,46 @@ columns:
               query: page("page://Avw8zX98OrbJWLpD").children
               text: "{{ page.title }}"
               value: "{{ page.uuid }}"
-          skills:
-            type: checkboxes
-            columns: 4
-            options:
-              Craft
-              ProcessWire
-              Animation
-              Ajax
-              Blog
-              CMS
-              CSS
-              Design
-              Director
-              Eyecon
-              Foundation
-              Flash
-              Gulp
-              Hosting
-              HTML
-              Installation
-              Javascript
-              Json
-              Kirby
-              LaravelMix
-              Mehrsprachig
-              Mobile
-              Mysql
-              Newsletter
-              PHP
-              Podcast
-              Print
-              Sass
-              Shop
-              Soap
-              Tailwind
-              Touchscreen
-              Twig
-              Vue js
-              Wordpress
-              XML
+          # skills:
+          #   type: checkboxes
+          #   columns: 4
+          #   options:
+          #     Craft
+          #     ProcessWire
+          #     Animation
+          #     Ajax
+          #     Blog
+          #     CMS
+          #     CSS
+          #     Design
+          #     Director
+          #     Eyecon
+          #     Foundation
+          #     Flash
+          #     Gulp
+          #     Hosting
+          #     HTML
+          #     Installation
+          #     Javascript
+          #     Json
+          #     Kirby
+          #     LaravelMix
+          #     Mehrsprachig
+          #     Mobile
+          #     Mysql
+          #     Newsletter
+          #     PHP
+          #     Podcast
+          #     Print
+          #     Sass
+          #     Shop
+          #     Soap
+          #     Tailwind
+          #     Touchscreen
+          #     Twig
+          #     Vue js
+          #     Wordpress
+          #     XML
   - width: 1/3
     sections:
       date:
@@ -91,18 +91,18 @@ columns:
               query: page("page://mXUxQxgYcrWpOtXg").children
               text: "{{ page.title }}"
               value: "{{ page.uuid }}"
-          genre:
-            type: radio
-            options:
-              Animation
-              Banner
-              CD-ROM
-              Installation
-              Online-Game
-              Print Design
-              Touchscreen
-              Website
-              Web-App
+          # genre:
+          #   type: radio
+          #   options:
+          #     Animation
+          #     Banner
+          #     CD-ROM
+          #     Installation
+          #     Online-Game
+          #     Print Design
+          #     Touchscreen
+          #     Website
+          #     Web-App
 
       bilder:
         headline: Bilder

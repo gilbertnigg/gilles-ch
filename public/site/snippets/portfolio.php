@@ -9,7 +9,7 @@
 		<div class="px-1 mb-2 w-1/2 md:w-1/3 md:px-2 md:mb-4 lg:w-1/4">
 			<figure class="portfolio__thumb relative"
 				data-title="<?= $work->title() ?>"
-				data-headline="<?= $work->genre() ?>"
+				data-headline="<?= $work->type()->value() ?>"
 				data-work="<?= $work->uid() ?>">
 				<span class="block overflow-hidden aspect-w-16 aspect-h-12">
 					<picture>
@@ -23,7 +23,7 @@
 				</span>
 				<figcaption class="absolute bottom-0 inset-x-0 px-3 py-2 text-left text-xs bg-white sm:text-sm">
 					<strong class="font-medium text-gb-dark"><?= $work->title() ?></strong><br>
-					<span class="text-gb"><?= $work->genre() ?> <?= $work->date()->toDate('Y') ?></span>
+					<span class="text-gb"><?= $work->type()->value() ?> <?= $work->date()->toDate('Y') ?></span>
 				</figcaption>
 			</figure>
       	</div>
