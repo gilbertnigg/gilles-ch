@@ -13,11 +13,15 @@ columns:
         fields:
           kunde:
             type: text
-            width: 1/2
+            width: 1/3
           mediapartner:
             extends: sections/text
             inline: true
-            width: 1/2
+            width: 1/3
+          zeige_kunde:
+            type: toggle
+            text: Kunde anzeigen
+            width: 1/3
           text:
             label: Text
             extends: sections/text

@@ -37,7 +37,7 @@
 		<div class="lg:w-3/4 md:pr-2">
 			<ul class="tags">
 			<?php $a_kunden = [];
-			foreach ($article->children()->published()->sortBy('kunde', 'asc') as $work) :
+			foreach ($article->children()->published()->filterBy('zeige_kunde', true)->sortBy('kunde', 'asc') as $work) :
 				if (in_array($work->kunde()->toString(), $a_kunden) || !$work->kunde()->toString()) {
 						continue; // Prevent duplicates
 				} else {
