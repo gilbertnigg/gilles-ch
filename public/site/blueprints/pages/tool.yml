@@ -12,6 +12,7 @@ columns:
             type: url
       pages:
         type: pages
+        create: false
         label: Other posts
         query: page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('tools', page.uuid, ',')
         sortBy: 'date desc'
@@ -29,6 +30,6 @@ columns:
         max: 1
         layout: cards
         image:
-          ratio: 3/2
+          ratio: 1/1
           cover: true
-          back: black
+          back: white

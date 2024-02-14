@@ -4,7 +4,8 @@ icon: tag
 sections:
   content:
     type: pages
+    create: false
     label: Tools
     limit: 999
     image:
-      back: black
+      back: white
