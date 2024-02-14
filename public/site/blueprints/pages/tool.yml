@@ -13,7 +13,7 @@ columns:
       pages:
         type: pages
         create: false
-        label: Other posts
+        label: Seiten
         query: page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('tools', page.uuid, ',')
         sortBy: 'date desc'
         info: "{{ page.date.toDate('d.m.Y') }}"
