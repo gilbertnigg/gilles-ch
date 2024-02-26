@@ -19,24 +19,29 @@ columns:
         headline: Seiten
         status: all
         sortBy: date desc
-        info: "{{ page.date.toDate('d.m.Y') }}"
         search: true
         layout: table
         columns:
           kunde:
             label: Kunde
             type: text
-          weblink:
-            type: url
-            label: Weblink
           date:
             width: 1/8
             value: "{{ page.date.toDate('d.m.Y') }}"
+          type:
+            label: Type
+            type: select
+          tools:
+            label: Tools
+            type: checkboxes
+          weblink:
+            type: url
+            label: Weblink
         template: work
         image:
           query: page.images.sortBy('sort','asc', 'filename','asc').first
           cover: true
-          back: white
+          back: black
 
   - width: 1/2
     sections:
