@@ -50,7 +50,7 @@ columns:
         parent: page.children.find("types")
         template: type
         sortBy: title asc
-        info: "{{ page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('types', page.uuid, ',').count }}"
+        info: "{{ page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('type', page.uuid, ',').count }}"
         image:
           back: white
   - width: 1/2
