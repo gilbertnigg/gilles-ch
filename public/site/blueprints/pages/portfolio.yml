@@ -35,7 +35,8 @@ columns:
         template: work
         image:
           query: page.images.sortBy('sort','asc', 'filename','asc').first
-          back: black
+          cover: true
+          back: white
 
   - width: 1/2
     sections:
@@ -45,7 +46,7 @@ columns:
         parent: page.children.find("types")
         template: type
         image:
-          back: black
+          back: white
   - width: 1/2
     sections:
       tool:
@@ -54,4 +55,4 @@ columns:
         parent: page.children.find("tools")
         template: tool
         image:
-          back: black
+          back: white
