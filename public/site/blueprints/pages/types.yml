@@ -5,6 +5,7 @@ sections:
   content:
     type: pages
     label: Typ
+    create: type
     limit: 9999
     sortBy: title asc
     image:

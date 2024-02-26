@@ -6,6 +6,7 @@ sections:
     type: pages
     label: Tools
     limit: 999
+    create: tool
     sortBy: title asc
     image:
       back: white
