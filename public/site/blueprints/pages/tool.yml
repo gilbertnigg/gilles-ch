@@ -21,7 +21,7 @@ columns:
         create: false
         label: Arbeiten
         query: page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('tools', page.uuid, ',')
-        sortBy: 'date desc'
+        sortBy: date desc
         info: "{{ page.date.toDate('d.m.Y') }}"
         template: work
         limit: 9999

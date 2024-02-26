@@ -7,5 +7,6 @@ sections:
     create: false
     label: Tools
     limit: 999
+    sortBy: title asc
     image:
       back: white
