@@ -36,7 +36,7 @@ columns:
           tools:
             label: Tools
             type: checkboxes
-            value: "{{ page.type.toPage.title }}"
+            value: "{{ page.tools.toPage.title }}"
           weblink:
             type: url
             label: Weblink
