@@ -10,6 +10,11 @@ columns:
           weblink:
             label: Weblink
             type: url
+            width: 2/3
+          color:
+            label: Farbe
+            type: color
+            width: 1/3
       pages:
         type: pages
         create: false
@@ -20,6 +25,7 @@ columns:
         template: work
         limit: 9999
         image:
+          cover: true
           back: black
   - width: 1/3
     sections:
