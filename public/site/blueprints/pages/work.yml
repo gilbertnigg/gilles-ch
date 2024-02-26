@@ -35,10 +35,9 @@ columns:
             columns: 4
             options:
               type: query
-              query: page("page://Avw8zX98OrbJWLpD").children
+              query: page("page://Avw8zX98OrbJWLpD").children.sortBy("title", "asc")
               text: "{{ page.title }}"
               value: "{{ page.uuid }}"
-              sortBy: title asc
           # skills:
           #   type: checkboxes
           #   columns: 4
