@@ -31,10 +31,12 @@ columns:
           type:
             label: Type
             type: select
+            width: 1/8
             value: "{{ page.type.toPage.title }}"
           tools:
             label: Tools
             type: checkboxes
+            value: "{{ page.type.toPage.title }}"
           weblink:
             type: url
             label: Weblink
