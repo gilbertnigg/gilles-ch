@@ -31,6 +31,7 @@ columns:
           type:
             label: Type
             type: select
+            value: "{{ page.type.toPages }}"
           tools:
             label: Tools
             type: checkboxes
