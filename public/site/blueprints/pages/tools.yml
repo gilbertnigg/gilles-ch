@@ -8,5 +8,6 @@ sections:
     limit: 999
     create: tool
     sortBy: title asc
+    info: "{{ page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('tools', page.uuid, ',').count }}"
     image:
       back: white
