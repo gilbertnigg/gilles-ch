@@ -8,6 +8,6 @@ sections:
     create: type
     limit: 9999
     sortBy: title asc
-    info: "{{ page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('type', page.uuid, ',').count }}"
+    info: "{{ page('page://RZnIQZ3LcLZUa7n6').childrenAndDrafts.filterBy('type', page.uuid, ',').count }} [{{ page('page://RZnIQZ3LcLZUa7n6').children.filterBy('type', page.uuid, ',').count }}]"
     image:
       back: black
