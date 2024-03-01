@@ -26,13 +26,19 @@ columns:
             label: Kunde
             type: text
           date:
+            label: Datum
             width: 1/8
             value: "{{ page.date.toDate('d.m.Y') }}"
           type:
             label: Type
-            type: select
+            type: tags
             width: 1/8
             value: "{{ page.type.toPage.title }}"
+          tools:
+            label: Tools
+            type: tags
+            width: 1/8
+            value: "{{ page.tools.toTitles }}"
           weblink:
             type: url
             label: Weblink

@@ -32,6 +32,7 @@ node_modules
 # Plugins
 # ------------
 /public/site/plugins/*
+!/public/site/plugins/fieldmethods
 
 # Lock files
 # ---------------
