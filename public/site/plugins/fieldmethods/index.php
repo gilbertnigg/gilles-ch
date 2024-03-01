@@ -10,10 +10,5 @@ Kirby::plugin('gilles/fieldextensions', [
             $out = implode(', ', $out);
             return $out;
         },
-        'toUrl' => function ($field) {
-            $link = str_replace(['http://', 'https://', 'www.'], '', $field);
-            $out = '<a href="'.$field->value.'" target="_blank" rel="noopener noreferrer">'.$link.'</a>';
-            return $out;
-        }
     ]
 ]);

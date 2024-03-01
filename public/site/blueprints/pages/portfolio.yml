@@ -40,9 +40,8 @@ columns:
             type: tags
             value: "{{ page.tools.toTitles }}"
           weblink:
-            type: html
+            type: url
             label: Weblink
-            value: "{{ page.weblink.toUrl }}"
         template: work
         image:
           query: page.images.sortBy('sort','asc', 'filename','asc').first
