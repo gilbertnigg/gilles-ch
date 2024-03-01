@@ -42,7 +42,7 @@ columns:
           weblink:
             type: url
             label: Weblink
-            value: "{{ page.url.toUrl }}"
+            value: "{{ page.weblink.toUrl }}"
         template: work
         image:
           query: page.images.sortBy('sort','asc', 'filename','asc').first

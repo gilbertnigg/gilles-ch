@@ -11,7 +11,7 @@ Kirby::plugin('gilles/fieldextensions', [
             return $out;
         },
         'toUrl' => function ($field) {
-            $out = stri_replace(['http://', 'https://', 'www.'], '', $field->value);
+            $out = str_replace(['http://', 'https://', 'www.'], '', $field);
             return $out;
         }
     ]
