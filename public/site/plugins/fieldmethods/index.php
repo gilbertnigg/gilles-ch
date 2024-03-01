@@ -9,6 +9,10 @@ Kirby::plugin('gilles/fieldextensions', [
 			}
 			$out = implode(', ', $out);
             return $out;
+        },
+        'toUrl' => function ($field) {
+            $out = stri_replace(['http://', 'https://', 'www.'], '', $field->value);
+            return $out;
         }
     ]
 ]);
