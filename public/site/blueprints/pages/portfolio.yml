@@ -28,19 +28,19 @@ columns:
             width: 1/8
           date:
             label: Datum
-            width: 1/8
+            width: 8rem
             value: "{{ page.date.toDate('d.m.Y') }}"
           type:
             label: Type
             type: tags
-            width: 1/8
+            width: 8rem
             value: "{{ page.type.toPage.title }}"
           tools:
             label: Tools
             type: tags
             value: "{{ page.tools.toTitles }}"
           weblink:
-            type: url
+            type: html
             label: Weblink
             value: "{{ page.weblink.toUrl }}"
         template: work
